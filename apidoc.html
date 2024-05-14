@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient's login</h1>
+        <p>Data is sent once the patient logs in</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>email</td>
+                    <td>Patient's first option identifier to his account</td>
+                </tr>
+                <tr>
+                    <td>phoneNumber</td>
+                    <td>Patient's second option identifier to his account</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>The password of the patient's account</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>POST /api/login</h2>
+        <div class="code-block">
+            <h3>Example Request</h3>
+            <pre><code>{
+    "email": "patient@example.com",
+    "password": "patientpassword"
+}</code></pre>
+        </div>
+
+        <div class="code-block">
+            <h3>Example Response</h3>
+            <pre><code>{
+    "token": "your_token_here",
+    "patient_id": "user"
+}</code></pre>
+        </div>
+
+        <div class="code-block">
+            <h3>Example Error</h3>
+            <pre><code>{
+    "status": "error",
+    "error": "invalid credentials"
+}</code></pre>
+        </div>
+    </div>
+</body>
+</html>

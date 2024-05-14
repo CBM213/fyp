@@ -1,0 +1,70 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+}
+
+/* Main content styles */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #0055cc; /* Ensuring the header matches the sidebar color scheme */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content area */
+  overflow-y: auto; /* Allows scrolling within the content area */
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-basis: calc(33% - 20px); /* Three cards per row with spacing */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+#orders-list {
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #003366; /* Consistent with sidebar */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

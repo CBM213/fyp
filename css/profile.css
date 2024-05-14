@@ -1,0 +1,74 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+}
+
+/* Main content styles */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #0055cc; /* Ensuring the header matches the sidebar color scheme */
+}
+
+#container {
+  display: flex;
+  height: 100%;
+}
+
+#profileContainer {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background for content area */
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #0055cc; /* Header background color for distinction */
+  color: #ffffff;
+}
+
+input[type="text"], input[type="email"], select.form-select {
+  width: 50%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners, less pronounced */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow, lighter */
+  background-color: #ffffff; /* White background for inputs */
+}
+
+fieldset {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  #profileContainer {
+    padding: 20px 10px;
+  }
+}
+
+#disabledEmailInput {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+#disabledNameInput {
+  margin-left: 7px;
+  margin-top: 30px;
+}
